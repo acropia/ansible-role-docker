@@ -1,0 +1,13 @@
+---
+- name: Retrieve Docker repo
+  get_url:
+    url: https://download.docker.com/linux/centos/docker-ce.repo
+    dest: /etc/yum.repos.d/docker-ce.repo
+    mode: 0644
+    owner: root
+    group: root
+
+- name: Install docker-ce
+  yum:
+    name: docker-ce
+    state: latest

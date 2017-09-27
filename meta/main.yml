@@ -1,6 +1,6 @@
 galaxy_info:
   author: Jan Bouma
-  description: Install Docker Engine on CentOS Linux 7
+  description: Install Docker CE on CentOS Linux 7
   company: Acropia.nl
   license: BSD
   min_ansible_version: 1.2

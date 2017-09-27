@@ -1,7 +1,7 @@
 Role Name
 =========
 
-Install Docker Engine
+Install Docker CE on a CentOS Linux 7+ machine
 
 Requirements
 ------------
@@ -35,6 +35,5 @@ BSD
 Author Information
 ------------------
 
-Jan Bouma
-
-Acropia.nl
+Jan Bouma  
+Acropia.nl  

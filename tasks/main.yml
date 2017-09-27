@@ -1,14 +1,4 @@
 ---
-- name: Configure Docker yum repository
-  template: src='docker.repo.j2' dest='/etc/yum.repos.d/docker.repo'
+- include: requirements.yml
 
-- name: Install Docker Engine
-  yum:
-    name: docker-engine
-    state: installed
-
-- name: Enable and start docker service
-  systemd:
-    name: docker
-    enabled: yes
-    state: started
+- include: docker.yml

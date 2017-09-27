@@ -1,0 +1,9 @@
+---
+- name: Install requirements for Docker CE
+  yum:
+    name: "{{ item }}"
+    state: installed
+  with_items:
+    - yum-utils
+    - device-mapper-persistent-data
+    - lvm2
