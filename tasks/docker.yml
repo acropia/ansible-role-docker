@@ -11,3 +11,10 @@
   yum:
     name: docker-ce
     state: latest
+
+- name: Enable and start Docker service
+  systemd:
+    name: docker
+    enabled: yes
+    state: restarted
+    daemon_reload: yes
