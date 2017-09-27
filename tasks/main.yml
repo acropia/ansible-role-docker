@@ -2,3 +2,5 @@
 - include: requirements.yml
 
 - include: docker.yml
+
+- include: docker-compose.yml
